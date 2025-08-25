@@ -1,0 +1,14 @@
+# Habilitar el motor de reescritura
+RewriteEngine On
+
+# Evitar que se listen los directorios
+Options -Indexes
+
+# Redirigir si la solicitud no es un archivo existente
+RewriteCond %{REQUEST_FILENAME} !-f
+
+# Redirigir si la solicitud no es un directorio existente
+RewriteCond %{REQUEST_FILENAME} !-d
+
+# REGLA CORREGIDA: Captura la ruta solicitada y la pasa como un parámetro GET a index.php
+RewriteRule ^(.*)$ index.php?ruta=$1 [L,QSA]

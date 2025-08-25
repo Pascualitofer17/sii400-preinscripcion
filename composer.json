@@ -1,0 +1,21 @@
+{
+    "name": "tu-usuario/sistema-preinscripcion",
+    "description": "Proyecto del Sistema de Preinscripcion para gestionar estudiantes y carreras.",
+    "type": "project",
+    "license": "mit",
+    "authors": [
+        {
+            "name": "Tu Nombre",
+            "email": "tu-email@ejemplo.com"
+        }
+    ],
+    "require": {
+        "php": ">=7.4",
+        "dompdf/dompdf": "^2.0",
+        "phpoffice/phpspreadsheet": "^5.0",
+        "mpdf/mpdf": "^8.2"
+    },
+    "config": {
+        "optimize-autoloader": true
+    }
+}
